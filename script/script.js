@@ -9,3 +9,4 @@ menuToggle.addEventListener('click', () => {
     // Alterna a classe 'open' no botão de menu (transformando o hambúrguer em X)
     menuToggle.classList.toggle('open');
 });
+

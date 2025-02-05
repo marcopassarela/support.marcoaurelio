@@ -11,6 +11,7 @@ html {
 :root {
     --color-black: #000;
     --color-blue: #0047ca;
+    --color-white: #fff;
 }
 
 /* Menu Desktop */
@@ -96,24 +97,27 @@ html {
 
 /* Menu Mobile */
 .mobile-menu {
-    display: none; /* Esconde o menu por padrão */
+    display: flex; /* Mantenha como flex para alinhar corretamente */
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-    height: 30%; /* Ou qualquer altura que você queira */
-    background-color: rgb(63, 63, 63);
+    height: 100vh; /* Ou qualquer altura que você queira */
+    background-color: rgb(70, 70, 70);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
     z-index: 100;
-    padding: 50px 0;
+    
+    transform: translateY(-100%);
+    transition: transform 0.9s ease; /* Animação suave */
 }
 
 .mobile-menu.open {
-    display: flex; /* Exibe o menu quando a classe 'open' for adicionada */
+    transform: translateY(0); /* Move para a posição original */
 }
+
 
 .mobile-menu a {
     color: var(--color-black);
