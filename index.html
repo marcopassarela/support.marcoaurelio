@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -12,12 +13,33 @@
 </head>
 <body>
     <div id="menu">
-        <nav>
+        <!-- Menu para Desktop -->
+        <nav class="desktop-menu">
             <a href="#" class="linkMenu">Start</a>
             <a href="#" class="linkMenu">About</a>
             <a href="#" class="linkMenu">Contact</a>
             <a href="#" class="linkMenu">Support</a>
         </nav>
+    
+        <!-- Botão do Menu Hambúrguer -->
+        <button id="menu-toggle">
+            <span></span> <!-- Primeira linha do hambúrguer -->
+            <span></span> <!-- Segunda linha do hambúrguer -->
+            <span></span> <!-- Terceira linha do hambúrguer -->
+        </button>
+    
+        <!-- Menu Mobile (escondido inicialmente) -->
+        <div class="mobile-menu">
+            <a href="#" class="linkMenu">Start</a>
+            <a href="#" class="linkMenu">About</a>
+            <a href="#" class="linkMenu">Contact</a>
+            <a href="#" class="linkMenu">Support</a>
+        </div>
     </div>
+    
+    
+
+
+<script src="/script/script.js" defer></script>    
 </body>
 </html>
