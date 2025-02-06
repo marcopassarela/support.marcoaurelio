@@ -143,7 +143,6 @@ html {
     width: 60%;
     height: auto;
     padding: 10px 10px;
-    background-color: #0047ca1a;
 }
 .content h1 {
     font-size: 30px;
@@ -221,7 +220,7 @@ html {
     }
     .content {
         width: 80%;
-        height: 90vh;
+        height: auto;
         background-color: #0557ee1a;
     }
     .content h1 {
