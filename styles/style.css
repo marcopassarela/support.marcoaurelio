@@ -6,6 +6,9 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased; /* Suaviza no macOS e iOS */
+    -moz-osx-font-smoothing: grayscale;  /* Suaviza no macOS */
+    text-rendering: optimizeLegibility;   /* Melhora a legibilidade */
 }
 
 :root {
@@ -138,7 +141,7 @@ html {
 }
 .content {
     width: 60%;
-    height: 90vh;
+    height: auto;
     padding: 10px 10px;
     background-color: #0047ca1a;
 }
@@ -147,11 +150,58 @@ html {
 }
 .content p {
     font-size: 15px;
+    font-weight: 300;
+}
+.content li {
+    font-size: 15px;
+    margin-left: 3px;
+    font-weight: 300;
+}
+.content h3 {
+    font-size: 18px;
+}
+.content h4 {
+    font-weight: 600;
 }
 .description {  
     font-size: 15px;
     margin-bottom: 60px;
 }
+.dates, .dates2, .dates3, .dates4, .dates5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+}
+
+.descriptionDates {
+    width: 50%;
+    height: 125px;
+    /* background-color: rgb(0, 255, 234); */
+    float: left;
+}
+.descriptionInfo {
+    width: 50%;
+    height: 125px;
+    /* background-color: rgb(0, 255, 13); */
+    float: right;
+}
+.data {
+    width: 50%;
+    height: 60px;
+    background-color: rgb(234, 0, 255);
+    float: left;
+}
+.Info {
+    width: 50%;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    float: right;
+}
+
+
 
 /* Media query para telas pequenas (hamburguer) */
 @media screen and (max-width: 768px) {
@@ -182,5 +232,15 @@ html {
     }
     .description {
         margin-bottom: 50px;
+    }
+    .descriptionDates {
+        font-size: 14px;
+        height: auto;
+    }
+    .descriptionInfo {
+        height: auto;
+    }
+    .content li {
+        font-size: 13px;
     }
 }
