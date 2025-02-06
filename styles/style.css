@@ -166,7 +166,7 @@ html {
     font-size: 15px;
     margin-bottom: 60px;
 }
-.dates, .dates2, .dates3, .dates4, .dates5 {
+.dates, .dates2, .dates3, .dates4, .dates5, .dates6 {
     width: 100%;
     height: auto;
     display: flex;
@@ -183,7 +183,7 @@ html {
 }
 .descriptionInfo {
     width: 50%;
-    height: 125px;
+    height: auto;
     /* background-color: rgb(0, 255, 13); */
     float: right;
 }
@@ -198,6 +198,177 @@ html {
     height: 60px;
     background-color: rgb(255, 0, 0);
     float: right;
+}
+
+#privacy {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+
+#privacy img {
+    width: 80px;
+    height: 80px;
+    margin-left: 150px;
+    margin-top: 40px;
+    
+}
+.map-page {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.map-page h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: "Sora", sans-serif;
+    color: black;
+}
+.map-page a {
+    color: black;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    display: flex;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 45px;
+    position: relative;
+    width: fit-content;
+}
+.map-page a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+
+}
+.map-page a:hover::after {
+    width: 100%;
+}
+.support {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.support h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: "Sora", sans-serif;
+    color: black;
+}
+.support a {
+    color: black;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    display: inline-block; 
+    margin-bottom: 10px;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+}
+
+.support a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+}
+
+.support a:hover::after {
+    width: 100%;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.redes-sociais h3 {
+    font-size: 14px;
+    font-family: "Sora", sans-serif;
+    color: black
+}
+.redes-sociais a {
+    color: black;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    text-decoration: none !important; 
+    position: relative;
+    display: inline-block;
+}
+
+.redes-sociais a:hover {
+    text-decoration: none !important;
+}
+
+.redes-sociais a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: var(--color-text); 
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+.redes-sociais a:hover::after {
+    width: 100%;
+}
+
+.privacy-terms {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.privacy-terms h3 {
+    font-size: 14px;
+    font-family: "Sora", sans-serif;
+    color: black;
+}
+.privacy-terms a {
+    color: black;
+    font-family: "Sora", sans-serif;
+    font-size: 11px;
+    display: inline-block;
+    text-decoration: none;
+    width: 90px;
+    position: relative;
+    width: fit-content;
+}
+
+.privacy-terms a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+}
+
+.create-by {
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.create-by p {
+    font-size: 10px;
+    color: black;
+    font-family: "Sora", sans-serif;
 }
 
 
@@ -240,5 +411,41 @@ html {
     }
     .content li {
         font-size: 13px;
+    }
+    #privacy {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.151);
+    }
+    #privacy img {
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map-page {
+        margin-left: 0px;
+        display: none;
+    }
+    .support {
+        margin-left: 0;
+    }
+    .support h3 {
+        font-size: 12px;
+    }
+    .redes-sociais {
+        margin-left: 0;
+    }
+    .redes-sociais h3 {
+        font-size: 12px;
+    }
+    .privacy-terms {
+        margin-left: 0;
+    }
+    .privacy-terms h3 {
+        font-size: 12px;
     }
 }
