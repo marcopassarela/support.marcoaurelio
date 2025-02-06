@@ -103,15 +103,14 @@ html {
     right: 0;
     width: 100%;
     height: 100vh; /* Ou qualquer altura que você queira */
-    background-color: rgb(70, 70, 70);
+    background-color: var(--color-white);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
     z-index: 100;
-    
     transform: translateY(-100%);
-    transition: transform 0.9s ease; /* Animação suave */
+    transition: transform 1.02s ease-in-out; /* Animação suave */
 }
 
 .mobile-menu.open {
@@ -122,7 +121,7 @@ html {
 .mobile-menu a {
     color: var(--color-black);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .mobile-menu a:hover {
@@ -132,32 +131,27 @@ html {
 #container {
     width: 100%;
     height: auto;
-    
     margin-top: 50px;
     display: flex;
     justify-content: center;
     font-family: "Sora", serif;
 }
 .content {
-    width: 90%;
+    width: 60%;
     height: 90vh;
+    padding: 10px 10px;
     background-color: #0047ca1a;
-    display: flex;
-    justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content h1 {
+    font-size: 30px;
+}
+.content p {
+    font-size: 15px;
+}
+.description {  
+    font-size: 15px;
+    margin-bottom: 60px;
+}
 
 /* Media query para telas pequenas (hamburguer) */
 @media screen and (max-width: 768px) {
@@ -171,5 +165,19 @@ html {
 
     .mobile-menu.open {
         display: flex; /* Exibe o menu mobile quando a classe 'open' for adicionada */
+    }
+    .content {
+        width: 80%;
+        height: 90vh;
+        background-color: #0557ee1a;
+    }
+    .content h1 {
+        font-size: 25px;
+    }
+    .content p {
+        font-size: 13px;
+    }
+    .description {
+        margin-bottom: 50px;
     }
 }
