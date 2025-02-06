@@ -158,6 +158,9 @@ html {
     .desktop-menu {
         display: none; /* Esconde o menu desktop em telas pequenas */
     }
+    .mobile-menu a:hover {
+        color: var(--color-black);
+    }
 
     #menu-toggle {
         display: flex; /* Exibe o botão do hambúrguer */
